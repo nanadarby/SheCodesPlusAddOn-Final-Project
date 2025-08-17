@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
 }
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 60px auto 10px auto;
   background: white;
   padding: 20px 50px;
@@ -12,9 +12,8 @@ body {
 }
 select {
   display: block;
-  width: 80%;
+  width: 100%;
   font-family: "IBM Plex Serif", serif;
-
   font-size: 15px;
   border-radius: 4px;
   padding: 5px 5px;
@@ -29,7 +28,7 @@ h1 {
 }
 h2 {
   margin: 0 0 5px;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "IBM Plex Serif", serif;
 }
 footer {
@@ -49,7 +48,7 @@ footer {
   border: none;
 }
 .time {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: bold;
   padding: 3px;
   font-family: "IBM Plex Serif", serif;
