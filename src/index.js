@@ -1,12 +1,12 @@
-setInterval(function (updateTime) {
-  let newYorkElement = document.querySelector("#new-york");
-  let newYorkDateElement = newYorkElement.querySelector(".date");
-  let newYorkTimeElement = newYorkElement.querySelector(".time");
+function updateTime() {
+  let chicagoElement = document.querySelector("#chicago");
+  let chicagoDateElement = chicagoElement.querySelector(".date");
+  let chicagoTimeElement = chicagoElement.querySelector(".time");
 
-  let newYorkTime = moment().tz("America/NewYork");
+  let chicagoTime = moment().tz("America/Chicago");
 
-  newYorkDateElement.innerHTML = newYorkTime.format("MMM Do YYYY");
-  newYorkTimeElement.innerHTML = newYorkTime.format(
+  chicagoDateElement.innerHTML = chicagoTime.format("MMM Do YYYY");
+  chicagoTimeElement.innerHTML = chicagoTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
   let tokyoElement = document.querySelector("#tokyo");
@@ -14,6 +14,7 @@ setInterval(function (updateTime) {
   let tokyoTimeElement = tokyoElement.querySelector(".time");
 
   let tokyoTime = moment().tz("Asia/Tokyo");
+
   tokyoDateElement.innerHTML = tokyoTime.format("MMM Do YYYY");
   tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 
@@ -25,4 +26,17 @@ setInterval(function (updateTime) {
 
   cairoDateElement.innerHTML = cairoTime.format("MMM Do YYYY");
   cairoTimeElement.innerHTML = cairoTime.format("h:mm:ss [<small>]A[</small>]");
-}, 1000);
+}
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMMM Do YYYY"));
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
+let citySelectElement = document.querySelector("#city");
+
+citySelectElement.addEventListener("change", updateCity);
