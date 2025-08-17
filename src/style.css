@@ -1,5 +1,5 @@
 body {
-  background-color: pink;
+  background: linear-gradient(90deg, #1981c2, #6ac1b8, #bfe9db, #b2e8e2);
   font-family: sans-serif;
 }
 .container {
@@ -28,7 +28,7 @@ h1 {
 }
 h2 {
   margin: 0 0 5px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "IBM Plex Serif", serif;
 }
 footer {
@@ -48,7 +48,7 @@ footer {
   border: none;
 }
 .time {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold;
   padding: 3px;
   font-family: "IBM Plex Serif", serif;
