@@ -13,9 +13,9 @@ body {
 select {
   display: block;
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 4px;
-  padding: 10px;
+  padding: 5px;
 }
 
 h1 {
@@ -45,7 +45,7 @@ footer {
 .time {
   font-size: 36px;
   font-weight: bold;
-  vertical-align: middle;
+  padding: 3px;
 }
 .time small {
   font-size: 24px;
@@ -54,5 +54,4 @@ footer {
 }
 .date {
   opacity: 0.7;
-  padding: 30px 20px;
 }
