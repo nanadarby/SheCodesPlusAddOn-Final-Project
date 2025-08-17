@@ -6,37 +6,45 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>World Clock</title>
+    <title>Global Time</title>
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <select id="city">
+      <h1>Global Time</h1>
+      <select id="city-selections">
         <option value="">Select a city...</option>
         <option value="Europe/London">London</option>
         <option value="Europe/Paris">Paris</option>
         <option value="Africa/Algiers">Algiers</option>
       </select>
-      <div class="city" id="chicago">
-        <div>
-          <h2>Chicago</h2>
-          <div class="date"></div>
+      <div id="displayed-cities">
+        <div class="cities" id="chicago">
+          <div>
+            <h2>Chicago</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="tokyo">
-        <div>
-          <h2>Tokyo</h2>
-          <div class="date"></div>
+        <div class="cities" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="cairo">
-        <div>
-          <h2>Cairo</h2>
-          <div class="date"></div>
+        <div class="cities" id="cairo">
+          <div>
+            <h2>Cairo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
